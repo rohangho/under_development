@@ -41,26 +41,14 @@ public class MainActivity extends AppCompatActivity {
                         //  Toast.makeText(this,"hiiiiiiiii",Toast.LENGTH_LONG).show();
                         getAllImagesPath(context);
                     } else {
-
                         ActivityCompat.requestPermissions((Activity)context,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+
                     }
                 } else {
                     getAllImagesPath(context);
                 }
 
-               if(listOfAllImages.size()>0)
-               {
-                   for(int i=0;i<listOfAllImages.size();i++)
-                   {
-                       File imgFile = new  File(listOfAllImages.get(i));
-                       if(imgFile.exists())
-                       {
-                           Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
-                           Bitmap myReduce=Bitmap.createScaledBitmap(myBitmap,240,320,true);
-                           bitarray.add(myReduce);
-                       }
-                   }
-               }
+
             }
         });
         clear=(Button)findViewById(R.id.removefromstack);
@@ -73,11 +61,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public static ArrayList<String> getAllImagesPath(Context context) {
+    public void getAllImagesPath(Context context) {
         listOfAllImages = new ArrayList<>();
         listOfAllImages.addAll(getExternalImagesPath(context));
         listOfAllImages.addAll(getInternalImagesPath(context));
-        return listOfAllImages;
+        storeInBitarray();
+
     }
     private static ArrayList<String> getExternalImagesPath(Context context) {
         return getImagesPathFromUri(context, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -103,6 +92,23 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
         }
         return listOfAllImages;
+    }
+
+    public void storeInBitarray()
+    {
+        if(listOfAllImages.size()>0)
+        {
+            for(int i=0;i<listOfAllImages.size();i++)
+            {
+                File imgFile = new  File(listOfAllImages.get(i));
+                if(imgFile.exists())
+                {
+                    Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+                    Bitmap myReduce=Bitmap.createScaledBitmap(myBitmap,240,320,true);
+                    bitarray.add(myReduce);
+                }
+            }
+        }
     }
 
 }
