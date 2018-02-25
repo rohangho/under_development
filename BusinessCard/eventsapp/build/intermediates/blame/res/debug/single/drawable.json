@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\ghost_person.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\ghost_person.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_search_dropdown_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_search_dropdown_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_ab_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_spinner_ab_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_right.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\arrow_right.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_ic_clear_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_ic_clear.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_right_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_textfield_searchview_right_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_textfield_searchview_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_right_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_textfield_searchview_right_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_ab_holo.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_tab_indicator_ab_holo.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\conference.jpg",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\conference.jpg"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_left.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\arrow_left.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\linkedin_login.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\linkedin_login.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_search.png",
+        "source": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\src\\main\\res\\drawable\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_textfield_searchview_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_ab_holo_dark.xml",
+        "source": "C:\\Users\\ROHAN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-19.1.0.aar\\496af542ea9b508bdc84bde9ccdb0376\\res\\drawable\\abc_spinner_ab_holo_dark.xml"
+    }
+]

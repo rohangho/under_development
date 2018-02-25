@@ -32,11 +32,13 @@
         android:id="@+id/create"
         android:text="Create Account"/>
 
-    <Button
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in With LinkedIn"
-        android:id="@+id/linkedIn"/>
+        android:src="@drawable/s"
+        />
+
+
 
 
 </LinearLayout>
