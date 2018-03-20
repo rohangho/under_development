@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sun Feb 25 21:02:25 IST 2018
-0.baseType=DIRECTORY
-0.base=E\:\\android developer\\open project\\BusinessCard\\eventsapp\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-0.path=classes.dex
-0.set=DEX
-count=1
