@@ -28,7 +28,6 @@
         android:src="@drawable/menu"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
-        android:onClick="Navdrawer"
         android:layout_centerVertical="true"
         android:id="@+id/menuicon"
         />

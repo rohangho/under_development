@@ -42,7 +42,7 @@ public class ViewpagerAdapter extends PagerAdapter {
         View itemView=inflator.inflate(R.layout.vewpagerlayout,container,false);
         ImageView banner;
         banner=(ImageView)itemView.findViewById(R.id.bannerimage);
-        Picasso.get().load(images[0]).into(banner);
+        Picasso.get().load(images[position]).into(banner);
         container.addView(itemView);
         return itemView;
     }
