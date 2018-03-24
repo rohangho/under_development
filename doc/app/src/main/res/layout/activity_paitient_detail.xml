@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.android.doc.PaitientDetail">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/card"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="age"
+                android:layout_marginBottom="7dp"
+                android:inputType="number"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/spin_gender"
+                android:entries="@array/gender"
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_problem"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/diseases"></Spinner>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="Submit"
+    android:id="@+id/submit"
+   android:background="#FF4500"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
