@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PaitientDetail" />
-        <activity android:name=".checktheBox"></activity>
+        <activity android:name=".checktheBox" />
+        <activity android:name=".enter_the_detail"></activity>
     </application>
 
 </manifest>
