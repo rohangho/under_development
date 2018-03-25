@@ -69,7 +69,7 @@ public class listAdapter extends ArrayAdapter<customdatatype> {
             hold.tick=(CheckBox)v.findViewById(R.id.check);
 
             hold.tick.setOnCheckedChangeListener((checktheBox) context);
-            hold=(SymptonHolder)v.getTag();
+            v.setTag(hold);
 
         }
         else
