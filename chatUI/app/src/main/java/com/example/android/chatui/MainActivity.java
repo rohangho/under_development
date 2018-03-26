@@ -14,6 +14,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public static int d=0;
+    public static boolean e;
     private ListView listView;
     private View btnSend;
     private EditText editText;
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                             chatMessages.add(chatMessage1);
                             adapter.notifyDataSetChanged();
                             d++;
-                            isMine=true;
                             adapter.notifyDataSetChanged();
                         }
                     } else {

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:background="@drawable/right">
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
 <LinearLayout
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/firstone"
     android:orientation="horizontal">
@@ -19,7 +26,7 @@
 </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/secondone"
         android:layout_below="@id/firstone"
@@ -36,7 +43,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/thirdone"
         android:layout_below="@id/secondone"
@@ -57,4 +64,5 @@
         android:id="@+id/submit"
         android:text="Submit"
         android:layout_below="@id/thirdone"/>
+    </LinearLayout>
 </RelativeLayout>

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import static com.example.android.chatui.MainActivity.d;
+
 /**
  * Created by ROHAN on 26-03-2018.
  */
@@ -34,10 +36,15 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
         int viewType = getItemViewType(position);
 
         if (chatMessage.isMine()) {
+
             layoutResource = R.layout.chat_left;
 
+
         } else {
-            layoutResource = R.layout.item_chat_right;
+            if(d==2)
+                layoutResource=R.layout.activity_checkcase1;
+            else
+                layoutResource = R.layout.item_chat_right;
         }
 
         if (convertView != null) {
@@ -49,8 +56,14 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
         }
 
         //set message content
-        holder.msg.setText(chatMessage.getContent());
 
+        if (chatMessage.isMine())
+            holder.msg.setText(chatMessage.getContent());
+        else
+        {
+            if(d!=2)
+                holder.msg.setText(chatMessage.getContent());
+        }
         return convertView;
     }
 
