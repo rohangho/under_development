@@ -34,7 +34,7 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
 
         ChatMessage chatMessage = getItem(position);
         int viewType = getItemViewType(position);
-        if (viewType==0)
+        if (position!=1&& position!=2)
         {
             if (chatMessage.isMine()) {
 
