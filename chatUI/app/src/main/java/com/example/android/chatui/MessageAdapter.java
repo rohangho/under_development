@@ -5,11 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
-
-import static com.example.android.chatui.MainActivity.d;
 
 /**
  * Created by ROHAN on 26-03-2018.
@@ -32,20 +31,37 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
         LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 
         int layoutResource = 0; // determined by view type
+
         ChatMessage chatMessage = getItem(position);
         int viewType = getItemViewType(position);
+        if (viewType==0)
+        {
+            if (chatMessage.isMine()) {
 
-        if (chatMessage.isMine()) {
-
-            layoutResource = R.layout.chat_left;
+                layoutResource = R.layout.chat_left;
 
 
-        } else {
-            if(d==2)
-                layoutResource=R.layout.activity_checkcase1;
-            else
+            } else {
                 layoutResource = R.layout.item_chat_right;
+            }
         }
+        else if ( position==1)
+        { layoutResource=R.layout.checkbox; }
+        else if( position==2)
+        {layoutResource=R.layout.detail_of_prob;
+        }
+        else
+        {
+            if (chatMessage.isMine()) {
+
+                layoutResource = R.layout.chat_left;
+
+
+            } else {
+                layoutResource = R.layout.item_chat_right;
+            }
+        }
+
 
         if (convertView != null) {
             holder = (ViewHolder) convertView.getTag();
@@ -57,13 +73,20 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
 
         //set message content
 
-        if (chatMessage.isMine())
-            holder.msg.setText(chatMessage.getContent());
-        else
-        {
-            if(d!=2)
-                holder.msg.setText(chatMessage.getContent());
-        }
+            if(viewType==0)
+            {holder.msg.setText(chatMessage.getContent());
+
+            }
+            else if(position==1)
+            {
+                holder.butt.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //obj.update();
+                    }
+                });
+            }
+
         return convertView;
     }
 
@@ -71,20 +94,21 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
     public int getViewTypeCount() {
         // return the total number of view types. this value should never change
         // at runtime
-        return 2;
+        return 3;
     }
 
     @Override
     public int getItemViewType(int position) {
         // return a value between 0 and (getViewTypeCount - 1)
-        return position % 2;
+        return position % 3;
     }
 
     private class ViewHolder {
         private TextView msg;
-
-        public ViewHolder(View v) {
+        private Button butt;
+         public ViewHolder(View v) {
             msg = (TextView) v.findViewById(R.id.txt_msg);
+            butt=(Button)v.findViewById(R.id.submit);
         }
     }
 }

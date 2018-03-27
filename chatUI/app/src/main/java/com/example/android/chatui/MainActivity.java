@@ -51,15 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     editText.setText("");
                     if (isMine) {
                         isMine = false;
-                        d++;
-                        if(d==1)
-                        {
-                            ChatMessage chatMessage1 = new ChatMessage("Tell Us a Bit about your Problem", isMine);
-                            chatMessages.add(chatMessage1);
-                            adapter.notifyDataSetChanged();
-                            d++;
-                            adapter.notifyDataSetChanged();
-                        }
+
                     } else {
                         isMine = true;
                     }
@@ -67,4 +59,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
