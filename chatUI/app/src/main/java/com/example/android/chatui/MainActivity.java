@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public static boolean e;
     private ListView listView;
     private View btnSend;
+    Button check;
+    RelativeLayout lay;
     private EditText editText;
     boolean isMine = true;
     private List<ChatMessage> chatMessages;
@@ -28,7 +32,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         chatMessages = new ArrayList<>();
+        lay=(RelativeLayout)findViewById(R.id.onclickvisible);
+        check=(Button)findViewById(R.id.submit);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                check.setText("Response Recorded");
+                lay.setVisibility(lay.VISIBLE);
 
+            }
+        });
         listView = (ListView) findViewById(R.id.list_msg);
         btnSend = findViewById(R.id.btn_chat_send);
         editText = (EditText) findViewById(R.id.msg_type);

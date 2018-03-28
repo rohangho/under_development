@@ -34,8 +34,7 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
 
         ChatMessage chatMessage = getItem(position);
         int viewType = getItemViewType(position);
-        if (position!=1&& position!=2)
-        {
+
             if (chatMessage.isMine()) {
 
                 layoutResource = R.layout.chat_left;
@@ -44,23 +43,8 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
             } else {
                 layoutResource = R.layout.item_chat_right;
             }
-        }
-        else if ( position==1)
-        { layoutResource=R.layout.checkbox; }
-        else if( position==2)
-        {layoutResource=R.layout.detail_of_prob;
-        }
-        else
-        {
-            if (chatMessage.isMine()) {
-
-                layoutResource = R.layout.chat_left;
 
 
-            } else {
-                layoutResource = R.layout.item_chat_right;
-            }
-        }
 
 
         if (convertView != null) {
@@ -73,19 +57,11 @@ public class MessageAdapter extends ArrayAdapter<ChatMessage> {
 
         //set message content
 
-            if(viewType==0)
-            {holder.msg.setText(chatMessage.getContent());
 
-            }
-            else if(position==1)
-            {
-                holder.butt.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        //obj.update();
-                    }
-                });
-            }
+            holder.msg.setText(chatMessage.getContent());
+
+
+
 
         return convertView;
     }
