@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Springlr</string>
+    <string name="facebook_app_id">190205358292792</string>
+    <string name="fb_login_protocol_scheme">fb190205358292792</string>
+</resources>

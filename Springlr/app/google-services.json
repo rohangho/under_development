@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "881203004038",
+    "firebase_url": "https://springlr-77c9d.firebaseio.com",
+    "project_id": "springlr-77c9d",
+    "storage_bucket": "springlr-77c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881203004038:android:46576772a40fb052",
+        "android_client_info": {
+          "package_name": "com.example.android.springlr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881203004038-tmk3ie36sbjfplaa4i73n4uu5bjsqp8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.springlr",
+            "certificate_hash": "3f9109bad062c9ba274556da080cf4fc823643a7"
+          }
+        },
+        {
+          "client_id": "881203004038-nh0n2p1n2751t22evfkmvk4j1oiliak9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHV83j2M8ePjrZ05xaBTvI0XJg_ixqeQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881203004038-nh0n2p1n2751t22evfkmvk4j1oiliak9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
