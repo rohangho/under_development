@@ -27,11 +27,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/logOut"
         android:text="LogOut"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Submitted By The User"
+            android:layout_gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="details"
+        android:layout_gravity="center"
         android:id="@+id/detail"/>
 
+    </LinearLayout>
 
 </LinearLayout>
