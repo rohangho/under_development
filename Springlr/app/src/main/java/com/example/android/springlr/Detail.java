@@ -42,10 +42,17 @@ public class Detail extends AppCompatActivity {
          currentUser=mAuth.getCurrentUser();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference();
 
-        mDatabaseRef.addValueEventListener(new ValueEventListener() {
+        mDatabaseRef.child("Details").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                showdata(dataSnapshot);
+                Iterator<DataSnapshot> detais=dataSnapshot.getChildren().iterator();
+                while (detais.hasNext())
+                {
+                    DataSnapshot detai=detais.next();
+                    String emailid=detai.child("email").getValue().toString();
+                    if(emailid.equals(currentUser.getEmail()))
+                        displaydetail.setText(detai.child("name").getValue().toString());
+                }
             }
 
             @Override
@@ -75,15 +82,4 @@ public class Detail extends AppCompatActivity {
 
     }
 
-    private void showdata(DataSnapshot dataSnapshot) {
-
-        Iterator<DataSnapshot> detais=dataSnapshot.getChildren().iterator();
-        while (detais.hasNext())
-        {
-            DataSnapshot detai=detais.next();
-            String emailid=detai.child("email").getValue().toString();
-            if(emailid.equals(currentUser.getEmail()))
-                displaydetail.setText(detai.child("name").getValue().toString());
-        }
-    }
 }
