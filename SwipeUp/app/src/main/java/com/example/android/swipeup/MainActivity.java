@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         // Add Fragments to adapter one by one
-        adapter.addFragment(new Fragment_one(), "FRAG1");
-        adapter.addFragment(new Fragment_two(), "FRAG2");
-        adapter.addFragment(new Fragment_three(), "FRAG3");
+        adapter.addFragment(new Fragment_one(), "OVERVIEW");
+        adapter.addFragment(new Fragment_two(), "CASH IN");
+        adapter.addFragment(new Fragment_three(), "CASH OUT");
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
