@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user">New User ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="add_img">Press + to add profile pic</string>
+    <string name="mail">email Id</string>
+    <string name="password">password</string>
+    <string name="name">name</string>
+    <string name="phone_number">phone number</string>
+    <string name="compulsory">All the details are compulsory</string>
+</resources>
