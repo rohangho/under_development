@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.example.rohan.myapplication.presenter.MainActivityPresenter;
 import com.example.rohan.myapplication.views.MainActivityMethods;
 import com.example.rohan.myapplication.views.SignUpActivity;
+import com.google.firebase.FirebaseApp;
 
 public class MainActivity extends AppCompatActivity implements MainActivityMethods {
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityMetho
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signUp=(Button)findViewById(R.id.sign_Up);
+        signUp=(Button)findViewById(R.id.sign_Up_in_mainactivity);
         final MainActivityPresenter presenter=new MainActivityPresenter(this);
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -16,6 +16,7 @@
         android:layout_height="200dp"
         android:background="@color/colorPrimaryDark"
         android:src="@drawable/plus"
+        android:id="@+id/addNew"
         />
     <TextView
         android:layout_width="match_parent"
@@ -46,18 +47,19 @@
         android:hint="@string/password"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
+            android:id="@+id/sign_Up"
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom=""
         android:text="@string/compulsory" />
 </LinearLayout>
 </ScrollView>
