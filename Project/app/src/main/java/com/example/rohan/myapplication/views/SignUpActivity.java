@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.rohan.myapplication.R;
@@ -29,7 +30,9 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
     EditText email;
     EditText password;
     EditText phoneNumber;
+    Button home;
     Uri uri;
+    ProgressBar showpRrogress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +43,8 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
         email=(EditText)findViewById(R.id.singnUpEmail);
         phoneNumber=(EditText)findViewById(R.id.signUpPhone);
         password=(EditText)findViewById(R.id.signUpPassword);
+        showpRrogress=(ProgressBar)findViewById(R.id.progress);
+        home=(Button)findViewById(R.id.return_home);
         final SignUpPresenter signPresenter=new SignUpPresenter(this);
         addPic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,8 +99,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
             Toast.makeText(getApplicationContext(),"Please fill properly",Toast.LENGTH_LONG).show();
         else
         {
-            UploadDetail upload=new UploadDetail(addPic,name,email,phoneNumber,password,getApplicationContext(),this,uri );
-
+            UploadDetail upload=new UploadDetail(addPic,name,email,phoneNumber,password,getApplicationContext(),this,uri ,home,showpRrogress);
             upload.uploadStuffs();
         }
 
