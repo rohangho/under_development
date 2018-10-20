@@ -29,6 +29,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
     EditText email;
     EditText password;
     EditText phoneNumber;
+    Uri uri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +74,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
 
         if (requestCode == pickPhoto && resultCode == RESULT_OK && data != null && data.getData() != null) {
 
-            Uri uri = data.getData();
+            uri = data.getData();
 
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
@@ -93,7 +94,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpMethods {
             Toast.makeText(getApplicationContext(),"Please fill properly",Toast.LENGTH_LONG).show();
         else
         {
-            UploadDetail upload=new UploadDetail(addPic,name,email,phoneNumber,password,getApplicationContext(),this);
+            UploadDetail upload=new UploadDetail(addPic,name,email,phoneNumber,password,getApplicationContext(),this,uri );
 
             upload.uploadStuffs();
         }
