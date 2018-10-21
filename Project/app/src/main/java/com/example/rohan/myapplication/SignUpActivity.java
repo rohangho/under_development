@@ -63,7 +63,7 @@ public class SignUpActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mAuth!=null)
+                if(FirebaseAuth.getInstance()!=null)
                 {
                     Intent homeIntent=new Intent(getApplicationContext(),Home.class);
                     startActivity(homeIntent);

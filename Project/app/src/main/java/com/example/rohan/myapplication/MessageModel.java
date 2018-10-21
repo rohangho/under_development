@@ -5,6 +5,10 @@ public class MessageModel {
     String message;
     String authur;
 
+    MessageModel()
+    {
+
+    }
 
 
     MessageModel(String message, String authur)

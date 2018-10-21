@@ -11,9 +11,10 @@
     <string name="compulsory">All the details are compulsory</string>
     <string name="return_home">Return Home</string>
     <string name="java">JAVA</string>
-    <string name="csharpe">C#</string>
+    <string name="csharpe">CSharp</string>
     <string name="scala">Scala</string>
     <string name="c">C</string>
     <string name="python">Python</string>
     <string name="javascript">Javascript</string>
+    <string name="log_out">Log Out</string>
 </resources>

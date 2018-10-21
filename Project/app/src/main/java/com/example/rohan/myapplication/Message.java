@@ -1,5 +1,6 @@
 package com.example.rohan.myapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -29,12 +30,21 @@ public class Message extends AppCompatActivity {
     MessageAdapter adapter;
     ListView displayer;
     List<MessageModel> messages;
+    String type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+        Intent i=getIntent();
+        Bundle b=i.getExtras();
+        if(b!=null)
+            type=(String)b.get("Type_Selected");
         displayer=(ListView)findViewById(R.id.list_item);
         messages=new ArrayList<MessageModel>();
+
+        adapter=new MessageAdapter(getApplicationContext(),R.layout.inside_messege,messages);
+        adapter.notifyDataSetChanged();
+        displayer.setAdapter(adapter);
 
         typedMessege=(EditText)findViewById(R.id.message);
         sendPressed=(Button)findViewById(R.id.send);
@@ -42,7 +52,7 @@ public class Message extends AppCompatActivity {
         sendPressed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseReference mChildDatabase = mDatabaseRef.child("JAVA").push();
+                DatabaseReference mChildDatabase = mDatabaseRef.child(type).push();
                 mChildDatabase.child("message").setValue(typedMessege.getText().toString());
                 mChildDatabase.child("user").setValue(FirebaseAuth.getInstance().getCurrentUser().getEmail());
                 typedMessege.setText("");
@@ -51,8 +61,8 @@ public class Message extends AppCompatActivity {
         });
 
 
-        DatabaseReference rootRef=FirebaseDatabase.getInstance().getReference("JAVA");
-       rootRef.addValueEventListener(new ValueEventListener() {
+        DatabaseReference rootRef=FirebaseDatabase.getInstance().getReference(type);
+     /*  rootRef.addValueEventListener(new ValueEventListener() {
            @Override
            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                for(DataSnapshot ds : dataSnapshot.getChildren()) {
@@ -65,6 +75,37 @@ public class Message extends AppCompatActivity {
                adapter=new MessageAdapter(getApplicationContext(),R.layout.inside_messege,messages);
                adapter.notifyDataSetChanged();
                displayer.setAdapter(adapter);
+           }
+
+           @Override
+           public void onCancelled(@NonNull DatabaseError databaseError) {
+
+           }
+       });
+       */
+
+       rootRef.addChildEventListener(new ChildEventListener() {
+           @Override
+           public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+               String a=dataSnapshot.child("message").getValue(String.class);
+               String b=dataSnapshot.child("user").getValue(String.class);
+               MessageModel model=new MessageModel(a,b);
+               adapter.add(model);
+           }
+
+           @Override
+           public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+           }
+
+           @Override
+           public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+           }
+
+           @Override
+           public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
            }
 
            @Override
