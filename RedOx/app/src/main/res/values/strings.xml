@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Red Ox</string>
+    <string-array name="age">
+        <item>10</item>
+        <item>10 - 15</item>
+        <item>16 - 40</item>
+        <item>Above 40</item>
+    </string-array>
+</resources>
