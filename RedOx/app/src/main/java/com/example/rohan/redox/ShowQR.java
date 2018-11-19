@@ -28,7 +28,7 @@ public class ShowQR extends AppCompatActivity {
         showQR=(ImageView)findViewById(R.id.display_qr);
         MultiFormatWriter multiFormatWriter=new MultiFormatWriter();
         try {
-            BitMatrix bitMatrix=multiFormatWriter.encode(toCode, BarcodeFormat.QR_CODE,500,500);
+            BitMatrix bitMatrix=multiFormatWriter.encode(toCode, BarcodeFormat.QR_CODE,700,700);
             BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
             Bitmap bitmap=barcodeEncoder.createBitmap(bitMatrix);
             showQR.setImageBitmap(bitmap);

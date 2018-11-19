@@ -28,13 +28,16 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent = getIntent();
-        String k = intent.getStringExtra("STRING_I_NEED");
-        uniqueCode = k;
-        String l = intent.getStringExtra("urGender");
-        gender = l;
-        String m = intent.getStringExtra("slab");
-        ageSlab = m;
+       // Intent i = getIntent();
+        Bundle extras=getIntent().getExtras();
+
+            uniqueCode = (String) extras.get("STRING_I_NEED");
+            // uniqueCode = k;
+            gender = (String) extras.get("urGender");
+            // gender = l;
+            ageSlab = (String) extras.get("slab");
+            // ageSlab = m;
+
 
 
         setContentView(R.layout.activity_main2);

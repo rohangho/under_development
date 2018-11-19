@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity  {
 
                     Intent intent=new Intent(getApplicationContext(),Main2Activity.class);
                     intent.putExtra("slab",a);
-                    intent.putExtra("urGender",b.);
-                    intent.putExtra("STRING_I_NEED",(name.getText().toString()+ageInString+b).toString());
-                    startActivity(new Intent(getApplicationContext(),Main2Activity.class));
+                    intent.putExtra("urGender",b);
+                    intent.putExtra("STRING_I_NEED",(name.getText().toString()+ageInString+b));
+                    startActivity(intent);
                 }
             }
         });
