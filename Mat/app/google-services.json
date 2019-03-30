@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "124832606886",
+    "firebase_url": "https://matress-7f918.firebaseio.com",
+    "project_id": "matress-7f918",
+    "storage_bucket": "matress-7f918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124832606886:android:bac948afd1f8f243",
+        "android_client_info": {
+          "package_name": "com.example.mat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124832606886-0vrbv0r68rr2jqdrsku1ma1qb28l8t6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mat",
+            "certificate_hash": "1b23430c15c211fc4e03fffa720739932e5d47fa"
+          }
+        },
+        {
+          "client_id": "124832606886-1f3jhu3anmlc1ounh3b8fdc04h918len.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaHGGfBhlB3iGTHlGE6hS4lyaLteCc930"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124832606886-1f3jhu3anmlc1ounh3b8fdc04h918len.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
