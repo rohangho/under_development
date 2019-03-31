@@ -1,19 +1,15 @@
 package com.example.mat;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
-import com.example.mat.Services.BackgroundService;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,8 +33,7 @@ public class ServiceBroadcastReceiver extends BroadcastReceiver {
             public void onLocationChanged(Location location) {
                 Log.e("Location", Double.toString(location.getLatitude()));
                 Calendar mycalender = Calendar.getInstance();
-                DatabaseReference mDatabase;
-                mDatabase = FirebaseDatabase.getInstance().getReference();
+                DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
                 DatabaseReference mChildReference = mDatabase.child("Location").push();
                 mChildReference.child("Lattitude").setValue(location.getLatitude());
                 mChildReference.child("Longitude").setValue(location.getLongitude());
@@ -61,10 +56,7 @@ public class ServiceBroadcastReceiver extends BroadcastReceiver {
             }
         });
 
-   }
-
-
-
+    }
 
 
 }
