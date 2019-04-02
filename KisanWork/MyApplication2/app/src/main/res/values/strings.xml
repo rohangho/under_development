@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment_contact">Hello blank fragment contact</string>
+    <string name="hello_blank_fragment_list">Hello blank fragment list</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
