@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="username">username</string>
+    <string name="image_home">Its just an image</string>
+    <string name="password">password</string>
+    <string name="enterIn">Enter</string>
+    <string name="facebook_app_id">2115308248766484</string>
+    <string name="fb_login_protocol_scheme">fb2115308248766484</string>
+    <string name="select_or_pick">Select or Pick</string>
+    <string name="shows_the_selected_image">Shows the selected Image</string>
+</resources>
